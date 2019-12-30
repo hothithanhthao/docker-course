@@ -1,0 +1,10 @@
+version: '3' 
+
+services: 
+
+    docker-mooc: 
+      image: devopsdockeruh/first_volume_exercise 
+      build: . 
+      volumes: 
+        - ./logs.txt:/Users/Risa/Desktop/Docker/Part\ 2/2.1/logs.txt
+      container_name: docker-mooc
